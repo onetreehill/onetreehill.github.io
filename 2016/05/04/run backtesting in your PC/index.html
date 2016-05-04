@@ -80,21 +80,18 @@
 
 
 
-<meta name="description" content="前话如今在线的回测平台多如牛毛，但总是有策略被剽窃的忧虑，当然距离自己写出一个优秀的策略还尚需时日。本着还是自己的东西靠谱些的想法，就自己弄了个坏境。更没想到，下载到了A股的日数据和分钟数据，虽然分钟数据只有15年的，但终究是可以开始试试身手了……
-平台组建平台基于开源软件Pyalgotrade-cn。此版本为Pyalgotrade的扩充版，引入了国内的A股市场，但是你需要找到可靠的A股数据，并添">
+<meta name="description" content="前话如今在线的回测平台多如牛毛，但总是有策略被剽窃的忧虑，当然距离自己写出一个优秀的策略还尚需时日。本着还是自己的东西靠谱些的想法，就自己弄了个坏境。更没想到，下载到了A股的日数据和分钟数据，虽然分钟数据只有15年的，但终究是可以开始试试身手了……">
 <meta property="og:type" content="article">
 <meta property="og:title" content="回测平台">
 <meta property="og:url" content="http://gengtoday.com/2016/05/04/run backtesting in your PC/index.html">
 <meta property="og:site_name" content="GEng‘s Blog">
-<meta property="og:description" content="前话如今在线的回测平台多如牛毛，但总是有策略被剽窃的忧虑，当然距离自己写出一个优秀的策略还尚需时日。本着还是自己的东西靠谱些的想法，就自己弄了个坏境。更没想到，下载到了A股的日数据和分钟数据，虽然分钟数据只有15年的，但终究是可以开始试试身手了……
-平台组建平台基于开源软件Pyalgotrade-cn。此版本为Pyalgotrade的扩充版，引入了国内的A股市场，但是你需要找到可靠的A股数据，并添">
+<meta property="og:description" content="前话如今在线的回测平台多如牛毛，但总是有策略被剽窃的忧虑，当然距离自己写出一个优秀的策略还尚需时日。本着还是自己的东西靠谱些的想法，就自己弄了个坏境。更没想到，下载到了A股的日数据和分钟数据，虽然分钟数据只有15年的，但终究是可以开始试试身手了……">
 <meta property="og:image" content="http://7xtmzk.com1.z0.glb.clouddn.com/example_spuder.PNG">
 <meta property="og:image" content="http://7xtmzk.com1.z0.glb.clouddn.com/BTing_figure_triM.png">
-<meta property="og:updated_time" content="2016-05-04T13:29:17.584Z">
+<meta property="og:updated_time" content="2016-05-04T13:35:17.768Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="回测平台">
-<meta name="twitter:description" content="前话如今在线的回测平台多如牛毛，但总是有策略被剽窃的忧虑，当然距离自己写出一个优秀的策略还尚需时日。本着还是自己的东西靠谱些的想法，就自己弄了个坏境。更没想到，下载到了A股的日数据和分钟数据，虽然分钟数据只有15年的，但终究是可以开始试试身手了……
-平台组建平台基于开源软件Pyalgotrade-cn。此版本为Pyalgotrade的扩充版，引入了国内的A股市场，但是你需要找到可靠的A股数据，并添">
+<meta name="twitter:description" content="前话如今在线的回测平台多如牛毛，但总是有策略被剽窃的忧虑，当然距离自己写出一个优秀的策略还尚需时日。本着还是自己的东西靠谱些的想法，就自己弄了个坏境。更没想到，下载到了A股的日数据和分钟数据，虽然分钟数据只有15年的，但终究是可以开始试试身手了……">
 <meta name="twitter:image" content="http://7xtmzk.com1.z0.glb.clouddn.com/example_spuder.PNG">
 
 
@@ -312,6 +309,7 @@
 
       
         <h2 id="前话"><a href="#前话" class="headerlink" title="前话"></a>前话</h2><p>如今在线的回测平台多如牛毛，但总是有策略被剽窃的忧虑，当然距离自己写出一个优秀的策略还尚需时日。本着还是自己的东西靠谱些的想法，就自己弄了个坏境。更没想到，下载到了A股的日数据和分钟数据，虽然分钟数据只有15年的，但终究是可以开始试试身手了……</p>
+<a id="more"></a>
 <h2 id="平台组建"><a href="#平台组建" class="headerlink" title="平台组建"></a>平台组建</h2><p>平台基于开源软件<a href="https://github.com/Yam-cn/pyalgotrade-cn" title="pyalgotrade-cn" target="_blank" rel="external">Pyalgotrade-cn</a>。此版本为Pyalgotrade的扩充版，引入了国内的A股市场，但是你需要找到可靠的A股数据，并添加到相应的位置，当然这是后话了。</p>
 <p>首先需要安装下述软件：</p>
 <font size="4"> <a href="https://git-scm.com/download/" target="_blank" rel="external">GIT</a> </font> ：用于管理、配置Pyalgotrade-cn。相关操作流程百度之……然后，在git bash中执行下述命令，即可配置完毕。<br><br><code>$ git clone https://github.com/Yam-cn/pyalgotrade-cn.git</code><br><br>Pyalgotrade是基于Python语言的，所以需要配置Python的运行环境，由于本人习惯于Matlab的界面，故而选用了如下IDE。<br><br><font size="4"> <a href="https://www.continuum.io/downloads" target="_blank" rel="external">Anaconda</a> </font>
