@@ -88,7 +88,7 @@
 <meta property="og:description" content="前话如今在线的回测平台多如牛毛，但总是有策略被剽窃的忧虑，当然距离自己写出一个优秀的策略还尚需时日。本着还是自己的东西靠谱些的想法，就自己弄了个坏境。更没想到，下载到了A股的日数据和分钟数据，虽然分钟数据只有15年的，但终究是可以开始试试身手了……">
 <meta property="og:image" content="http://7xtmzk.com1.z0.glb.clouddn.com/example_spuder.PNG">
 <meta property="og:image" content="http://7xtmzk.com1.z0.glb.clouddn.com/BTing_figure_triM.png">
-<meta property="og:updated_time" content="2016-05-04T13:35:17.768Z">
+<meta property="og:updated_time" content="2016-05-04T13:47:25.028Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="回测平台">
 <meta name="twitter:description" content="前话如今在线的回测平台多如牛毛，但总是有策略被剽窃的忧虑，当然距离自己写出一个优秀的策略还尚需时日。本着还是自己的东西靠谱些的想法，就自己弄了个坏境。更没想到，下载到了A股的日数据和分钟数据，虽然分钟数据只有15年的，但终究是可以开始试试身手了……">
@@ -312,12 +312,12 @@
 <a id="more"></a>
 <h2 id="平台组建"><a href="#平台组建" class="headerlink" title="平台组建"></a>平台组建</h2><p>平台基于开源软件<a href="https://github.com/Yam-cn/pyalgotrade-cn" title="pyalgotrade-cn" target="_blank" rel="external">Pyalgotrade-cn</a>。此版本为Pyalgotrade的扩充版，引入了国内的A股市场，但是你需要找到可靠的A股数据，并添加到相应的位置，当然这是后话了。</p>
 <p>首先需要安装下述软件：</p>
-<font size="4"> <a href="https://git-scm.com/download/" target="_blank" rel="external">GIT</a> </font> ：用于管理、配置Pyalgotrade-cn。相关操作流程百度之……然后，在git bash中执行下述命令，即可配置完毕。<br><br><code>$ git clone https://github.com/Yam-cn/pyalgotrade-cn.git</code><br><br>Pyalgotrade是基于Python语言的，所以需要配置Python的运行环境，由于本人习惯于Matlab的界面，故而选用了如下IDE。<br><br><font size="4"> <a href="https://www.continuum.io/downloads" target="_blank" rel="external">Anaconda</a> </font>
+<font size="4"> <a href="https://git-scm.com/download/" target="_blank" rel="external">GIT</a> </font> ：用于管理、配置Pyalgotrade-cn。相关操作流程百度之……然后，在git bash中执行下述命令，即可配置完毕。<br><br><code>$ git clone https://github.com/Yam-cn/pyalgotrade-cn.git</code><br><br>Pyalgotrade是基于Python语言的，所以需要配置Python的运行环境，由于本人习惯于Matlab的界面，故而选用了如下IDE。<br><font size="4"> <a href="https://www.continuum.io/downloads" target="_blank" rel="external">Anaconda</a> </font>
 
 <p>安装即可，下述是环境示例，和Matlab很像。<br><img src="http://7xtmzk.com1.z0.glb.clouddn.com/example_spuder.PNG" alt="示例"></p>
 <h2 id="平台测试"><a href="#平台测试" class="headerlink" title="平台测试"></a>平台测试</h2><p>Pyalgotrade-cn内集成了若干简单的策略（在<strong>stratlib</strong>文件夹下），以及一支股票的日线数据（在<strong>histdata</strong>文件夹下）。</p>
-<p>运行<strong>stratlib</strong>文件夹下的<em>.py</em>文件就可以进行数据回测了！</p>
-<p>下述是三均线策略的回测结果，从结果来看，收益不错。通过比较买卖点的位置，可以发现此策略对于波段的捕捉还是具有一定的准确性。<br><img src="http://7xtmzk.com1.z0.glb.clouddn.com/BTing_figure_triM.png" alt=""></p>
+<p>运行<strong>stratlib</strong>文件夹下的 <em>.py</em> 文件就可以进行数据回测了！</p>
+<p>下述是三均线策略的回测结果，从结果来看，收益不错。通过比较买卖点的位置，可以发现此策略对于波段的捕捉具有一定的准确性。<br><img src="http://7xtmzk.com1.z0.glb.clouddn.com/BTing_figure_triM.png" alt=""></p>
 
       
     </div>
