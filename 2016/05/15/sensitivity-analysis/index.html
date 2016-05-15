@@ -7,7 +7,7 @@
 
 <html class="theme-next pisces use-motion">
 <head>
-  <meta charset="UTF-8"/>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -86,13 +86,10 @@
 <meta property="og:url" content="http://gengtoday.com/2016/05/15/sensitivity-analysis/index.html">
 <meta property="og:site_name" content="GEng‘s Blog">
 <meta property="og:description" content="引子能哥终于要毕业了，虽然最终结果不详，但是祝他好运！通常的情况是，组里师兄毕业，老板会想方设法将该师兄有价值的工作延续下去，所以会安排其他的人重复该师兄论文的工作，以此为切入点。">
-<meta property="og:image" content="http://www.forkosh.com/mathtex.cgi? [\partial output_j ]/[\partial input_i]   ">
-<meta property="og:image" content="http://www.forkosh.com/mathtex.cgi?  P(input_i,output_j) ">
-<meta property="og:updated_time" content="2016-05-15T08:52:32.932Z">
+<meta property="og:updated_time" content="2016-05-15T09:00:46.506Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="敏感性分析浅析（一）">
 <meta name="twitter:description" content="引子能哥终于要毕业了，虽然最终结果不详，但是祝他好运！通常的情况是，组里师兄毕业，老板会想方设法将该师兄有价值的工作延续下去，所以会安排其他的人重复该师兄论文的工作，以此为切入点。">
-<meta name="twitter:image" content="http://www.forkosh.com/mathtex.cgi? [\partial output_j ]/[\partial input_i]   ">
 
 
 
@@ -110,7 +107,7 @@
   };
 </script>
 
-  <title> 敏感性分析浅析（一） | GEng‘s Blog </title>
+  <title> 敏感性分析浅析（一） | GEng‘s Blog </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -131,7 +128,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -286,10 +283,10 @@
 <li>Variance-based methods</li>
 </ol>
 <p><strong>OFAT</strong>： 单因素分析法，对 <em>输出参数</em> 逐个分析。</p>
-<p><strong>Local methods</strong>： 计算 <em>输出参数</em>   对 <em>输入参数</em> 的偏导数<img src="http://www.forkosh.com/mathtex.cgi? [\partial output_j ]/[\partial input_i]   ">。该偏导数可以反映输入参数的局部变化对输出参数变化的影响程度。</p>
+<p><strong>Local methods</strong>： 计算 <em>输出参数</em>   对 <em>输入参数</em> 的偏导数 $[\partial Output_j ]/[\partial Input_i]$。该偏导数可以反映输入参数的局部变化对输出参数变化的影响程度。</p>
 <p><strong>Scatter plots</strong>： <em>单个输入参数</em>  与 <em>单个输出参数</em> 的散点分布，视觉化分析。</p>
 <p><strong>Regression analysis</strong>： 多因素分析法，同时考虑多个 <em>输入参数</em>。</p>
-<p><strong>Variance-based methods</strong>：  统计变量为 <em>输出参数</em> <em>输入参数</em> 的联合概率密度分布函数    <img src="http://www.forkosh.com/mathtex.cgi?  P(input_i,output_j) ">。 分析条件统计特性。</p>
+<p><strong>Variance-based methods</strong>：  统计变量为 <em>输出参数</em> <em>输入参数</em> 的联合概率密度分布函数    $ P(Input_i,Output_j) $。 分析条件统计特性。</p>
 <p>待续……<br>将进一步对<strong>Local methods</strong>方法进行讨论。</p>
 
       
@@ -563,7 +560,24 @@
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 
