@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="setup example," />
+  <meta name="keywords" content="随想," />
 
 
 
@@ -80,19 +80,16 @@
 
 
 
-<meta name="description" content="前话如今在线的回测平台多如牛毛，但总是有策略被剽窃的忧虑，当然距离自己写出一个优秀的策略还尚需时日。本着还是自己的东西靠谱些的想法，就自己弄了个坏境。更没想到，下载到了A股的日数据和分钟数据，虽然分钟数据只有15年的，但终究是可以开始试试身手了……">
+<meta name="description" content="引子过去的三周里，乘着老板不在和假期，去沪杭见了见朋友，以及重回蓉城参加了辽子的婚礼。一东一西，跨度实在大了点。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="回测平台">
-<meta property="og:url" content="http://gengtoday.com/2016/05/04/run backtesting in your PC/index.html">
+<meta property="og:title" content="游者">
+<meta property="og:url" content="http://gengtoday.com/2016/06/16/the-traveller/index.html">
 <meta property="og:site_name" content="GEng‘s Blog">
-<meta property="og:description" content="前话如今在线的回测平台多如牛毛，但总是有策略被剽窃的忧虑，当然距离自己写出一个优秀的策略还尚需时日。本着还是自己的东西靠谱些的想法，就自己弄了个坏境。更没想到，下载到了A股的日数据和分钟数据，虽然分钟数据只有15年的，但终究是可以开始试试身手了……">
-<meta property="og:image" content="http://7xtmzk.com1.z0.glb.clouddn.com/example_spuder.PNG">
-<meta property="og:image" content="http://7xtmzk.com1.z0.glb.clouddn.com/BTing_figure_triM.png">
-<meta property="og:updated_time" content="2016-05-09T09:24:21.312Z">
+<meta property="og:description" content="引子过去的三周里，乘着老板不在和假期，去沪杭见了见朋友，以及重回蓉城参加了辽子的婚礼。一东一西，跨度实在大了点。">
+<meta property="og:updated_time" content="2016-06-16T13:57:05.132Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="回测平台">
-<meta name="twitter:description" content="前话如今在线的回测平台多如牛毛，但总是有策略被剽窃的忧虑，当然距离自己写出一个优秀的策略还尚需时日。本着还是自己的东西靠谱些的想法，就自己弄了个坏境。更没想到，下载到了A股的日数据和分钟数据，虽然分钟数据只有15年的，但终究是可以开始试试身手了……">
-<meta name="twitter:image" content="http://7xtmzk.com1.z0.glb.clouddn.com/example_spuder.PNG">
+<meta name="twitter:title" content="游者">
+<meta name="twitter:description" content="引子过去的三周里，乘着老板不在和假期，去沪杭见了见朋友，以及重回蓉城参加了辽子的婚礼。一东一西，跨度实在大了点。">
 
 
 
@@ -110,7 +107,7 @@
   };
 </script>
 
-  <title> 回测平台 | GEng‘s Blog </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title> 游者 | GEng‘s Blog </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -230,7 +227,7 @@
             
             
               
-                回测平台
+                游者
               
             
           </h1>
@@ -242,30 +239,11 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-04T20:20:54+08:00" content="2016-05-04">
-              2016-05-04
+            <time itemprop="dateCreated" datetime="2016-06-16T19:44:55+08:00" content="2016-06-16">
+              2016-06-16
             </time>
           </span>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/backtesting/" itemprop="url" rel="index">
-                    <span itemprop="name">backtesting</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
@@ -288,17 +266,16 @@
       
 
       
-        <h2 id="前话"><a href="#前话" class="headerlink" title="前话"></a>前话</h2><p>如今在线的回测平台多如牛毛，但总是有策略被剽窃的忧虑，当然距离自己写出一个优秀的策略还尚需时日。本着还是自己的东西靠谱些的想法，就自己弄了个坏境。更没想到，下载到了A股的日数据和分钟数据，虽然分钟数据只有15年的，但终究是可以开始试试身手了……</p>
-<a id="more"></a>
-<h2 id="平台组建"><a href="#平台组建" class="headerlink" title="平台组建"></a>平台组建</h2><p>平台基于开源软件<a href="https://github.com/Yam-cn/pyalgotrade-cn" title="pyalgotrade-cn" target="_blank" rel="external">Pyalgotrade-cn</a>。此版本为Pyalgotrade的扩充版，引入了国内的A股市场，但是你需要找到可靠的A股数据，并添加到相应的位置，当然这是后话了。</p>
-<p>首先需要安装下述软件：</p>
-<font size="4"> <a href="https://git-scm.com/download/" target="_blank" rel="external">GIT</a> </font> ：用于管理、配置Pyalgotrade-cn。相关操作流程百度之……然后，在git bash中执行下述命令，即可配置完毕。<br><br><code>$ git clone https://github.com/Yam-cn/pyalgotrade-cn.git</code><br><br>Pyalgotrade是基于Python语言的，所以需要配置Python的运行环境，由于本人习惯于Matlab的界面，故而选用了如下IDE。<br><font size="4"> <a href="https://www.continuum.io/downloads" target="_blank" rel="external">Anaconda</a> </font>
-
-<p>安装即可，下述是环境示例，和Matlab很像。<br><img src="http://7xtmzk.com1.z0.glb.clouddn.com/example_spuder.PNG" alt="示例"></p>
-<h2 id="平台测试"><a href="#平台测试" class="headerlink" title="平台测试"></a>平台测试</h2><p>Pyalgotrade-cn内集成了若干简单的策略（在<strong>stratlib</strong>文件夹下），以及一支股票的日线数据（在<strong>histdata</strong>文件夹下）。</p>
-<p>运行<strong>stratlib</strong>文件夹下的 <em>.py</em> 文件就可以进行数据回测了！</p>
-<p>下述是三均线策略的回测结果，从结果来看，收益不错。通过比较买卖点的位置，可以发现此策略对于波段的捕捉具有一定的准确性。<br><img src="http://7xtmzk.com1.z0.glb.clouddn.com/BTing_figure_triM.png" alt=""></p>
-<p><span id="busuanzi_container_page_pv"><br>  本文总阅读量<span id="busuanzi_value_page_pv"></span>次<br></span></p>
+        <h1 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h1><p>过去的三周里，乘着老板不在和假期，去沪杭见了见朋友，以及重回蓉城参加了辽子的婚礼。一东一西，跨度实在大了点。<a id="more"></a>但是此番奔波并没有让我觉得疲惫，相反相当愉悦，可能是我喜欢未知的环境，行走的感觉，以及精疲力竭一觉天光的状态。这两周说了好多的话，想了好多的事，所以觉得时间不是那么的快了。</p>
+<h1 id="杭"><a href="#杭" class="headerlink" title="杭"></a>杭</h1><p>在见小潘之前，就听日天说过此君自分手之后狂摔二十多斤肉，而然见面之后好像和记忆中的差别不大，所以我始终有些好奇巅峰状态的他是个什么形状……对于日天的爽约，有些遗憾，但是并无怨气，遗憾有时候会是念想。</p>
+<p>如果说上回到杭州体会的是酷热，那么这回体会的就是雨了，大的小的，急的缓的，轮番来了一通。早餐的时候，点了份牛肉粉，熟悉的味道让我想起了家里的米粉，南方的吃食比北方好太多，如果以后回南方生活，那断然是为了胃。</p>
+<h1 id="沪"><a href="#沪" class="headerlink" title="沪"></a>沪</h1><p>其实早就该到上海看看的，想想认识已经两年了，却未曾一睹真容。一直都持有相由心生的观点，所以跟我想想的并无太大差别。</p>
+<p>在上海只停留了一天，早上的时候突然起了兴致，跑到鲁迅公园溜了一圈。南方的园子比北方精致，花草修剪得更有韵味，加之淅淅沥沥的小雨，让我一下子喜欢上那个园子。所以要是以后到沪工作，努力住到园子附近吧……</p>
+<p>上海市座感觉的城市，下雨天也不显脏乱。不过上海给我的感觉并没有北京亲切，当然也有可能是管中窥豹，亦或受情绪影响。傍晚坐着公交经过淮海路的时候，整条街的门脸着实把我吓到了，过于浓厚的商业气息让人有距离感。很早就听说过，上海是座“资本主义”盛行的城市，这样的好处是相对要公平些，对于没有背景的人来说，但是坏处就是，社会阶层会由财富水平直接决定，会使人深陷于追求财富的困顿中，也许这可以用来解释上海的学术水平相对不足的现状。不过对于追求财务自由的人来说，还是上海更合适些。</p>
+<h1 id="蓉"><a href="#蓉" class="headerlink" title="蓉"></a>蓉</h1><p>很感谢辽子的信任，让我尝试了一下伴郎，也有幸在大B上溜了一圈。对于辽子老婆强大的家庭背景，实在有点骇人，辽子以后九成会在蜀地混了，不过他肩上的担子也不轻。结婚的事情太多，也没有长谈的机会，等我毕业了，再去台北见见他吧。</p>
+<p>此番回蓉，时间非常的紧张，急匆匆地回川大转了转，就走了，也没怎么吃爽。不过走之前，梅二招待的一餐非常爽，黄辣丁和江团吃得非常嗨。我始终怀念大二那年，在黄花溪，和老白、日天吃得那顿饭。江安的变化也不大，新校区不知不觉都过了十年了，D座还是人满为患，老式的木桌也都更新了。食堂的变化也不大，特地寻到了卖铁板的窗口，由先前的小吃城，搬到了牛肉馆，不过从当初的7块涨到了20。大一那年，日天庆幸于高代没挂，而请全寝人吃铁板的情形还历历在目。</p>
+<p>第一天，和老米在望江晃荡，走到外宾楼的时候，全无印象，真有种恍若隔世的感觉。对于川大这片林子，我似野鸟，越飞越远……</p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>不知道为什么，这回回成都并没有很深切的感情。在望江到江安的大巴上，一路的景象全无印象，好似个初来的看客，突然觉得北京对我来说可能是最熟悉最亲切的城市了。</p>
 
       
     </div>
@@ -319,7 +296,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/setup-example/" rel="tag">#setup example</a>
+            <a href="/tags/随想/" rel="tag">#随想</a>
           
         </div>
       
@@ -328,13 +305,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/06/14/technical-analysis-1/" rel="next" title="技术分析学习 1">
+                <i class="fa fa-chevron-left"></i> 技术分析学习 1
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/05/08/mothers-day/" rel="prev" title="母亲节小记">
-                母亲节小记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -450,7 +427,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前话"><span class="nav-number">1.</span> <span class="nav-text">前话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#平台组建"><span class="nav-number">2.</span> <span class="nav-text">平台组建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#平台测试"><span class="nav-number">3.</span> <span class="nav-text">平台测试</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#引子"><span class="nav-number">1.</span> <span class="nav-text">引子</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#杭"><span class="nav-number">2.</span> <span class="nav-text">杭</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#沪"><span class="nav-number">3.</span> <span class="nav-text">沪</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#蓉"><span class="nav-number">4.</span> <span class="nav-text">蓉</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#后记"><span class="nav-number">5.</span> <span class="nav-text">后记</span></a></li></ol></div>
             
           </div>
         </section>
