@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="学习笔记," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -80,16 +80,16 @@
 
 
 
-<meta name="description" content="引子能哥终于要毕业了，虽然最终结果不详，但是祝他好运！通常的情况是，组里师兄毕业，老板会想方设法将该师兄有价值的工作延续下去，所以会安排其他的人重复该师兄论文的工作，以此为切入点。">
+<meta name="description" content="昨日又做了组会报告，感觉现在报告的水平有所提高，希望不是又一次的自我感觉良好。下午的时候，老板又把我叫过去，指手画脚的啰嗦了半天，之后立马感觉脑袋发胀，索性就去公寓的泳池泡了泡，小池子实在是放不开手脚。晚上的时候，没忍住，和二钰看了曼城德比，于是荒废了一天。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="敏感性分析浅析（一）">
-<meta property="og:url" content="http://gengtoday.com/2016/05/15/sensitivity-analysis/index.html">
+<meta property="og:title" content="美好的事">
+<meta property="og:url" content="http://gengtoday.com/2016/09/11/the-beauty/index.html">
 <meta property="og:site_name" content="GEng‘s Blog">
-<meta property="og:description" content="引子能哥终于要毕业了，虽然最终结果不详，但是祝他好运！通常的情况是，组里师兄毕业，老板会想方设法将该师兄有价值的工作延续下去，所以会安排其他的人重复该师兄论文的工作，以此为切入点。">
-<meta property="og:updated_time" content="2016-05-15T09:02:55.747Z">
+<meta property="og:description" content="昨日又做了组会报告，感觉现在报告的水平有所提高，希望不是又一次的自我感觉良好。下午的时候，老板又把我叫过去，指手画脚的啰嗦了半天，之后立马感觉脑袋发胀，索性就去公寓的泳池泡了泡，小池子实在是放不开手脚。晚上的时候，没忍住，和二钰看了曼城德比，于是荒废了一天。">
+<meta property="og:updated_time" content="2016-09-11T09:11:41.200Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="敏感性分析浅析（一）">
-<meta name="twitter:description" content="引子能哥终于要毕业了，虽然最终结果不详，但是祝他好运！通常的情况是，组里师兄毕业，老板会想方设法将该师兄有价值的工作延续下去，所以会安排其他的人重复该师兄论文的工作，以此为切入点。">
+<meta name="twitter:title" content="美好的事">
+<meta name="twitter:description" content="昨日又做了组会报告，感觉现在报告的水平有所提高，希望不是又一次的自我感觉良好。下午的时候，老板又把我叫过去，指手画脚的啰嗦了半天，之后立马感觉脑袋发胀，索性就去公寓的泳池泡了泡，小池子实在是放不开手脚。晚上的时候，没忍住，和二钰看了曼城德比，于是荒废了一天。">
 
 
 
@@ -107,7 +107,7 @@
   };
 </script>
 
-  <title> 敏感性分析浅析（一） | GEng‘s Blog </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title> 美好的事 | GEng‘s Blog </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -227,7 +227,7 @@
             
             
               
-                敏感性分析浅析（一）
+                美好的事
               
             
           </h1>
@@ -239,8 +239,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-15T14:46:15+08:00" content="2016-05-15">
-              2016-05-15
+            <time itemprop="dateCreated" datetime="2016-09-11T16:02:44+08:00" content="2016-09-11">
+              2016-09-11
             </time>
           </span>
 
@@ -266,29 +266,12 @@
       
 
       
-        <h2 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h2><p>能哥终于要毕业了，虽然最终结果不详，但是祝他好运！通常的情况是，组里师兄毕业，老板会想方设法将该师兄有价值的工作延续下去，所以会安排其他的人重复该师兄论文的工作，以此为切入点。<a id="more"></a>这几年琳琳碎碎地听能哥讲过几次关于敏感性分析的工作，当时觉得和我的工作几乎完全没有交集，所以也没认真听。而如今想着后半生要依仗数据分析生活，难免要考虑模型的有效性，所以还是花点时间熟悉熟悉得好。</p>
-<h2 id="敏感性分析的概述"><a href="#敏感性分析的概述" class="headerlink" title="敏感性分析的概述"></a>敏感性分析的概述</h2><p>维基对敏感性分析的概述如下：</p>
-<blockquote>
-<p><strong>Sensitivity analysis</strong> is the study of how the uncertainty in the output of a mathematical model or system (numerical or otherwise) can be apportioned to different sources of uncertainty in its inputs.</p>
-</blockquote>
-<p>我对此的浅显理解：敏感性分析是一种衡量模型输出与输入参数的关系的分析方法。</p>
-<p><strong>模型</strong> 是复杂系统在理想条件(假设)下的数学表述，通常情况下是对系统 <em>大尺度</em> (宏观) 特性的总结。因此，优秀的模型应当能准确描述系统的大尺度特征(例如天气预报中，地区的温度)，并且模型参数(输入参数)的轻微改变不会对预测结果(输出参数)——大尺度特征有较大影响。</p>
-<p>所以，敏感性分析对模型的检测与参数优化有着重要意义。</p>
-<h2 id="敏感性分析的方法"><a href="#敏感性分析的方法" class="headerlink" title="敏感性分析的方法"></a>敏感性分析的方法</h2><p>常见的分析方法：</p>
-<ol>
-<li>One-at-a-time (OAT/OFAT)</li>
-<li>Local methods</li>
-<li>Scatter plots</li>
-<li>Regression analysis</li>
-<li>Variance-based methods</li>
-</ol>
-<p><strong>OFAT</strong>： 单因素分析法，对 <em>输出参数</em> 逐个分析。</p>
-<p><strong>Local methods</strong>： 计算 <em>输出参数</em>   对 <em>输入参数</em> 的偏导数 $[\partial Output_j ]/[\partial Input_i]$。该偏导数可以反映输入参数的局部变化对输出参数变化的影响程度。</p>
-<p><strong>Scatter plots</strong>： <em>单个输入参数</em>  与 <em>单个输出参数</em> 的散点分布，视觉化分析。</p>
-<p><strong>Regression analysis</strong>： 多因素分析法，同时考虑多个 <em>输入参数</em>。</p>
-<p><strong>Variance-based methods</strong>：  统计变量为 <em>输出参数</em> <em>输入参数</em> 的联合概率密度分布函数    $ P(Input_i,Output_j) $。 分析条件统计特性。</p>
-<p>待续……<br>将进一步对<strong>Local methods</strong>方法进行讨论。</p>
-<p><span id="busuanzi_container_page_pv"><br>  本文总阅读量<span id="busuanzi_value_page_pv"></span>次<br></span></p>
+        <p>昨日又做了组会报告，感觉现在报告的水平有所提高，希望不是又一次的自我感觉良好。下午的时候，老板又把我叫过去，指手画脚的啰嗦了半天，之后立马感觉脑袋发胀，索性就去公寓的泳池泡了泡，小池子实在是放不开手脚。晚上的时候，没忍住，和二钰看了曼城德比，于是荒废了一天。<br><a id="more"></a></p>
+<p>今日早早的来办公室，又开始码字。老板也早早地来了，最近他忙着做蛋糕，牵头的是一位今年新进的院士。下午的时候，又来烦我，让我帮他去送计划书。好在是北大，两步路的距离。</p>
+<p>接头的是位标哥的学生，小我一届，在标哥那念得也很不顺畅，他苦笑着说还得两三年。为了换个轻松的话题，我就提到了苏庄。此兄为本科系里的师兄，先于我到京念流体。初到北京的时候，还经常一起出来面杀，搞点无聊的娱乐活动。不过之后，大家都忙起来了，也就没怎么见面了，之后再听到的是发了篇JFM，算是做得很好的了。但是，万万没想到的是，竟然还在标哥组里，没能毕业，于是去办公室找他扯了会儿。俊朗的小伙儿俨然变成大叔，略微明显的发际线，以及微微发福的身材，心中顿时无限感概。</p>
+<p>周五的时候，二钰到我们屋问问题，问波数是个啥玩意，我正一本正经跟他白话。一旁玩手机的小霆子突然心生感概的说，“二钰啊，我觉得你还是不要搞清楚的好，因为湍流太残破不堪了，而你是一个美好的事物，就不要互相伤害了。”</p>
+<p>年少无知的时候，都想着搞点大新闻，比如说想学学湍流，想解决那些无数人没能搞定的事，但是一路走来，净是些缝缝补补的事，做得吃力不说，更甚的是没有美感，却也没能力提出更好的想法了。</p>
+<p>两周前，北京书展。意外的看到了杜尚的绿盒子，看到大玻璃的时候甚是欢喜，各个角度看了好久，不过仍是一头雾水。看有些抽象艺术品的时候，即使不懂，但是会有美的感觉，所以准备深入的了解了解这些美好的事物，于是买了本《图解艺术》，打算累了的时候就拿出来翻翻。</p>
 
       
     </div>
@@ -307,28 +290,18 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/学习笔记/" rel="tag">#学习笔记</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/05/08/mothers-day/" rel="next" title="母亲节小记">
-                <i class="fa fa-chevron-left"></i> 母亲节小记
+              <a href="/2016/09/07/idle-away-the-time/" rel="next" title="虚度时光">
+                <i class="fa fa-chevron-left"></i> 虚度时光
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/05/23/someone-from-afar/" rel="prev" title="有朋自远方来">
-                有朋自远方来 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -444,7 +417,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#引子"><span class="nav-number">1.</span> <span class="nav-text">引子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#敏感性分析的概述"><span class="nav-number">2.</span> <span class="nav-text">敏感性分析的概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#敏感性分析的方法"><span class="nav-number">3.</span> <span class="nav-text">敏感性分析的方法</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>
@@ -565,24 +538,7 @@
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-      all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-</script>
-
-<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<!-- End: Injected MathJax -->
-<!-- hexo-inject:end -->
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
 
