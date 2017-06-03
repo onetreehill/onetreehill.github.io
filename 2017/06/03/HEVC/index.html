@@ -84,15 +84,16 @@
 
 
 
-<meta name="description" content="闲来乱扯">
-<meta property="og:type" content="website">
-<meta property="og:title" content="GEng‘s Blog">
-<meta property="og:url" content="http://gengtoday.com/tags/年鉴/index.html">
+<meta name="description" content="不出意外，外来十年应该就在这个行当了，如同前文所述，这个行当未来可期。所以为了给大家一个直观的印象，打算从这篇开始，介绍一下这份工作的内容，权当是我精炼总结的一个机会。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="视频编码浅谈（一）">
+<meta property="og:url" content="http://gengtoday.com/2017/06/03/HEVC/index.html">
 <meta property="og:site_name" content="GEng‘s Blog">
-<meta property="og:description" content="闲来乱扯">
+<meta property="og:description" content="不出意外，外来十年应该就在这个行当了，如同前文所述，这个行当未来可期。所以为了给大家一个直观的印象，打算从这篇开始，介绍一下这份工作的内容，权当是我精炼总结的一个机会。">
+<meta property="og:updated_time" content="2017-06-03T08:20:56.771Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GEng‘s Blog">
-<meta name="twitter:description" content="闲来乱扯">
+<meta name="twitter:title" content="视频编码浅谈（一）">
+<meta name="twitter:description" content="不出意外，外来十年应该就在这个行当了，如同前文所述，这个行当未来可期。所以为了给大家一个直观的印象，打算从这篇开始，介绍一下这份工作的内容，权当是我精炼总结的一个机会。">
 
 
 
@@ -110,7 +111,7 @@
   };
 </script>
 
-  <title> 标签: 年鉴 | GEng‘s Blog </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title> 视频编码浅谈（一） | GEng‘s Blog </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -131,7 +132,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container one-collumn sidebar-position-left  ">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -209,46 +210,144 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        年鉴
-        <small>标签</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                视频编码浅谈（一）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-06-03T16:20:10+08:00" content="2017-06-03">
+              2017-06-03
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/06/03/HEVC/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/06/03/HEVC/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2017/06/03/HEVC/" class="leancloud_visitors" data-flag-title="视频编码浅谈（一）">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <p>不出意外，外来十年应该就在这个行当了，如同前文所述，这个行当未来可期。所以为了给大家一个直观的印象，打算从这篇开始，介绍一下这份工作的内容，权当是我精炼总结的一个机会。<br><a id="more"></a></p>
+<p>视频编码的目的在于压缩原始视频数据，以达到网络传输分享的目的。目前视频娱乐已经成为日常娱乐的核心，比如：体育赛事的直播、转博、点播；在线电影、电视剧、动漫；不同终端之间的直播互动等等。对视频清晰度的追求从未改变，从标清、720P、1080P，到现今的2K、4K，不仅推动了硬件产业的发展，也提出了对视频编码压缩技术的进一步需求。（强行找意义而已，可无视！）</p>
+<p>好了，说正题。视频编码的总体思想在于利用视频帧在时间和空间上的高相关性，在上一帧，或者当前帧的某些空间区域的基础上传输变化量（残差）：</p>
+<p>Frame_current = Frame_last + residual-plot，</p>
+<p>再利用傅里叶变换的思想（实际中使用离散余弦变换DCT，只有实数部分，没有虚数部分）将residual-plot变换到频域，传输频域上的“主要量”（民科喜欢自造名词，无视无视！！）。“主要量”通过量化过程进行自动判断，很显然DCT之后将得到一个非整型的矩阵，并且低频区间的幅值要远大于高频区间的幅值，于是可以设定一个新的标度，将该矩阵重新标度，使之整数化，如此可获得的好处有：一，整形化的矩阵传输的数据量更小；二，幅值较小的可以被量化为0，这样使得矩阵稀疏化。当然，这种二次标度实质是一种舍弃局部信息的过程，所以会使图像失真（损失某些信息）。所以，量化过程也是视频编码质量损失的唯一来源。但是也是视频编码的核心环节。</p>
+<p>现在稍微理理上述过程：</p>
+<ol>
+<li>选择参考帧（Frame_last）以及模式（利用空间相关还是时间相关）；</li>
+<li>得到残差信息（上述公式）；</li>
+<li>DCT变换；</li>
+<li>量化；</li>
+<li>传输。<br>所以，视频编码的整个过程并不复杂，相反结构清晰，所有操作都服务于压缩数据量这一核心目标。</li>
+</ol>
+<p>但是，在实际操作中，流程会繁琐很多，下篇再细细说。</p>
 
-      <h1 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/2016/12/31/annaul-review-2016/" itemprop="url">
-              
-                <span itemprop="name">波澜壮阔</span>
-              
-            </a>
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-12-31T17:29:20+08:00"
-              content="2016-12-31" >
-          12-31
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/28/task/" rel="next" title="任务">
+                <i class="fa fa-chevron-left"></i> 任务
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -256,6 +355,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/06/03/HEVC/"
+           data-title="视频编码浅谈（一）" data-url="http://gengtoday.com/2017/06/03/HEVC/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -275,8 +382,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://7xtmzk.com1.z0.glb.clouddn.com/flower.jpg"
@@ -326,6 +442,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -435,6 +562,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
